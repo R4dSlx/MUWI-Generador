@@ -24,6 +24,7 @@
 
 
     <!-- Navegación -->
+
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand" href="{% url 'Doctor' %}">BANKE-T</a>
@@ -71,7 +72,8 @@
 
     <!-- Cabecera -->
     <header class="masthead" style="background-image: url(' {% block background %}{% endblock %}  ')">
-      <div class="overlay"></div>
+      <div class="overlay"></div><br><br>
+    {% include 'messages.html' %}
       <div class="container">
         <div class="row">
           <div class="col-lg-5 col-md-50 mx-full">
@@ -85,6 +87,7 @@
 
 
     <!--contenido-->
+
     {% block content %}{% endblock %}
     {% load static %}
 

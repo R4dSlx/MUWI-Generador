@@ -1,5 +1,5 @@
 {% extends "Doctor.html" %}
-
+{% include 'messages.html' %}
 {% load crispy_forms_tags %}
 {% block background %}{% load static %}{% static 'img/login.jpg' %}{% endblock %}
 
@@ -10,8 +10,9 @@
   <form method="POST">
     {% csrf_token %}
     {{ login_form|crispy }}
-    <button class="btn btn-primary" type="submit">Iniciar Sesión</button>
-  </form><br>
+    <button class="btn btn-primary" type="submit">Iniciar Sesión</button><br><br>
+      <p class="text-center">Oh no... <a href="{% url 'password_reset' %}">Olvidé mi contraseña</a>.</p>
+  </form>
   <p class="text-center">¿No tienes una cuenta? <a href="{% url 'register' %}">Créate una!</a>.</p>
 </div>
 
