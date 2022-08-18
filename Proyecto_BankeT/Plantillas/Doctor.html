@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>{% block title %}{% endblock %} Banke-T </title>
+    <title>{% block title %}{% endblock %} </title>
 
     <!-- Estilos y fuentes del template  -->
 
@@ -16,6 +16,8 @@
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href="{% static 'css/clean-blog.min.css' %}" rel="stylesheet">
+
+
 
   </head>
 
@@ -27,7 +29,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="{% url 'Doctor' %}">BANKE-T</a>
+        <a class="navbar-brand" href="#">BANKE-T</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menú
           <i class="fa fa-bars"></i>
@@ -38,7 +40,7 @@
               <a class="nav-link" href="{% url 'Doctor' %}">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'gestioncomidas' %}">Banquetes</a>
+              <a class="nav-link" href="{% url 'banquetes' %}">Banquetes</a>
             </li>
               <li class="nav-item">
               <a class="nav-link" href="{% url 'acerca' %}">Sobre Nosotros</a>
@@ -89,11 +91,69 @@
     <!--contenido-->
 
     {% block content %}{% endblock %}
+    {% if request.path == "/" %}
+        <link href="{% static 'css/carru.css' %}" rel="stylesheet">
+<div class="csslider1 autoplay cs_handle" style="width:300px;">
+  <input name="cs_anchor1" id="cs_slide1_0" type="radio" class="cs_anchor slide">
+  <input name="cs_anchor1" id="cs_slide1_1" type="radio" class="cs_anchor slide">
+  <input name="cs_anchor1" id="cs_slide1_2" type="radio" class="cs_anchor slide">
+  <input name="cs_anchor1" id="cs_play1" type="radio" class="cs_anchor" checked="">
+  <input name="cs_anchor1" id="cs_pause1_0" type="radio" class="cs_anchor pause">
+  <input name="cs_anchor1" id="cs_pause1_1" type="radio" class="cs_anchor pause">
+  <input name="cs_anchor1" id="cs_pause1_2" type="radio" class="cs_anchor pause">
+  <ul>
+	  <div>
+		  <img src="https://webdevpuneet.com/wp-content/uploads/2021/05/cat3.png" style="width: 100%;">
+	  </div>
+	  <li class="num0 img">
+		  <a href="https://webdevpuneet.com/css-only-slider/" target="_blank">
+			  <img src="https://webdevpuneet.com/wp-content/uploads/2021/05/cat3.png" alt="" title="">
+		  </a>
+	  </li>
+	  <li class="num1 img">
+		  <a href="https://webdevpuneet.com/css-only-slider/" target="_blank">
+			  <img src="https://webdevpuneet.com/wp-content/uploads/2021/05/cat2.png" alt="" title="">
+		  </a>
+	  </li>
+	  <li class="num2 img">
+		  <a href="https://webdevpuneet.com/css-only-slider/" target="_blank">
+			  <img src="https://webdevpuneet.com/wp-content/uploads/2021/05/cat1.png" alt="" title="">
+		  </a>
+	  </li>
+  </ul>
+	<div class="cs_play_pause">
+		<label class="cs_play" for="cs_play1">Play</label>
+	</div>
+  <div class="cs_arrowprev">
+		  <label class="num0" for="cs_slide1_0"><span><i></i></span></label>
+		  <label class="num1" for="cs_slide1_1"><span><i></i></span></label>
+		  <label class="num2" for="cs_slide1_2"><span><i></i></span></label>
+  </div>
+  <div class="cs_arrownext">
+		  <label class="num0" for="cs_slide1_0"><span><i></i></span></label>
+		  <label class="num1" for="cs_slide1_1"><span><i></i></span></label>
+		  <label class="num2" for="cs_slide1_2"><span><i></i></span></label>
+  </div>
+  <div class="cs_bullets">
+		  <label class="num0" for="cs_slide1_0">
+			  <span class="cs_point"></span>
+		  </label>
+		  <label class="num1" for="cs_slide1_1">
+			  <span class="cs_point"></span>
+		  </label>
+		  <label class="num2" for="cs_slide1_2">
+			  <span class="cs_point"></span>
+		  </label>
+  </div>
+</div>
+
+    {% endif %}
+
     {% load static %}
 
 
+{% if request.path != "/" and request.path != 'login' %} <hr>
 
-{% if request.path == "/" %}
     <!-- Pié de página -->
     <footer>
       <div class="container">
@@ -122,7 +182,7 @@
         </div>
       </div>
     </footer>
-    {% endif %}
+{% endif %}
 
     <!-- Bootstrap y Javascripts -->
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>

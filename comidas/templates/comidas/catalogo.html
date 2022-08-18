@@ -1,0 +1,515 @@
+{% extends 'Doctor.html' %}
+
+{% block title %}Banke-T | Catálogo {% endblock %}
+
+{% block background %}{% load static %}{% static 'img/plato2.jpg' %}{% endblock %}
+
+{% block headers %}
+ <h1><i>Banquetes</i></h1>
+ <span class="subheading"><strong>PRINCIPALES</strong></span>
+{% endblock %}
+
+{% block content %}
+        <link href="{% static 'css/comi2.css' %}" rel="stylesheet">
+    <p style="text-align:center;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAj0AAABYCAMAAAAp6bbzAAAAk1BMVEX///8AAADe3t57e3v8/Pz29vbo6Ojl5eXv7+/r6+ugoKD19fW3t7fW1tbIyMjR0dEoKChAQECmpqbCwsJpaWmMjIyTk5Otra1NTU22trZ0dHRjY2OYmJgVFRXDw8Pb29stLS1bW1tISEgfHx8rKys4ODhWVlYMDAw6OjobGxuEhIRvb28yMy9gYltlZ2pBQ0A7OTSxbdKjAAAI4UlEQVR4nO2d2ZaiyhKGMyAZZB5kVES0lBL77H3e/+lORCZWW93VQ+2LjX2M74JGCmtlrfV3zAlCMAzDMAzDMAzD/HPk0gtg/kyMJivXh3RTZMbSS2H+KKzddCgcbXgse1tn/sILYv4U5M7b5g7Khs57PNhWtZ7CpZfF/AkERb8iU+PYePAjPORSyFVesn6YXyA3gRAhCSdE8yNc/CRyS7ihsIPtwmtjHh0X8BCt6EDqcSo85CtSUS7aYNm1MY+OOwolFyF2Sj0ZnRnCr9B/bYtl18Y8Oj7ZnoY8V0Xq6clbRZGwPBHb+XrZtTGPjjVinl6R7dmSekIyN3EurFL0YXhYeHHMgyMvqB6PbM+WioSxSYdKyEmsdqv9smtjHh15xGzdI7NTKvVc8RBi8NMK2cjOWnh1zINzdFE9JJyCDtEgdPCDIU8mRi45Mz+F1KPMTkFl5ohCnb4U4oyaEmx7mJ8ij6iQkoQzxXiIXvBgTFo9MuGWO/MzZIfeqSDhTNSkiCiBN1ohDpbI7HThxTEPjhzRaxUknGsjSD1obgwMelJfVPF56dUxj4K1OWy/90SyC1E9Ozw7a/WgKTIwdN67oslZPcyMuT7AJf72qjzipZIaWhtPkHowee9RNYkhmqb+91fJPCatB9DV+beXE1IP9UZN1aQA/BimaJIMUVWsHmYmBjhBcv22b/6KFzwyOyZmWqgePI0TYUGI6vk+ag55auNJ2UCzR/ns3l89F6ge6m6ZmGmhevA0OqF6YlE1r+9vtbcnmP6t1TKPhXsZ8wT25+jd1fVGiIq6W6YqM0MpRJ4q9WT5fb1H5mdAeODwWTHgEpwhPZICnCDXbQgTg5uARjEK9FPSIeOC8Y6P6vHir7Vm30tIO5AstHRmeYwOSm8PYMiWpKASsAlFs6PUvHoR7pcK0BRtB1RPLkoHXP09u1DSAS/lebEnxj3DHtWTpFoNNEg4oXvqKTyOL+I/EB0OaIVaVE8oJndU6rFNfffBidlxPTce3INuyry4DmZaRXE6bQBGgH16TNIainxtJ6geZ9ZO12DcfVp6+cyyhKd7+RykCcehaKIKrtEBoJLyL/Cl5dtxkJWjv5q1c4owgHagWXr1zNKYzp0BOtXaPf2FyRb6NE/EcHmb6ulMGC/6NurC10fuuT87cr+W/fGrfo4qsbrAVQwAf4sMqFmhwcgoVNqR9HiELWXzzHNDNWfLen1Tj7Y9NVxQHiM4Obqv263gVKSd84Vq0T3AarFFMw9CgILYuzJ9k4+qHpYAuxDVU7oAt/aWBHWTqx/M8sp1ZkZEpIgXVxxu6lGOCi3SRnwB+CLOALa+U+IP1+1LqkzOFm7VH+aJ8bW/CsV1Vo8Sh0RXZhVofHp0VtvbnV6N0bJBnTEbgCuFjBC5Fk0gijvPRa6rMVA9E7quuTvqQy6z+UsbNj2MIr6VCrWOdNPdINf1X0zBKPXSTw9bwduIBvotc5nFPhhhaz4h756H0Wv5bISxh7dMKsXsayLXFegWBnqr0ZtNT3xLzYhs6b9lMdpQ5RxPyLuoxejUtYuDmhnmax76MLJKnjXOdsYGS5d+VuPcUlVslv1DliQQfm88I++jFkfLB2OeoZ0vRZDE7oE8VDpXfGzwb2YJ7mYK7aX/lMXoeW+txh/m/039Zr4SQBOvCvJa+72+skL1uFKIlpwcw9zRavkUN2FMtQicEjq5us1hWJ0lNjlFzCNvSWbeU2r53DZtNRaqZ42u3XmbfL7IuhDUrOCxHuZbMqWeu8Z5FSW1Y9j+7UqyaVSSkX38feaJkXO9J8JTIw+qLGuaYhd4RXs1Cy+IbHHMlXj4AXTMR6ie17gdPMOSYZWpvCyvv9TrwnZSSI+iwZ8nHPQwH2Io6zPIoMZ/NpMjrGgYkvHy6lGP9FUZJ35tBfMDVjToI+f861wE7VVvveliUUNCVaHq17+EeVIC6lVUcyl1PNdQ3M7lWv3LW4+ZH4Fa6WBc3yrxbQfT7VzvHeXeKPMDnAOKJIWXm2L25rl+23LRkHraX/8S5jmhrRW9QCd1axw31/VmujVBnSPn6swPWdN8s53BAIaKmkfzStOqkS4ithmMA79pkvkYtDHJKr52XQ7FNCTHYUp1vtX22XnfVtuiDTnfYj4E4+XUD4w4KmsaSU0w91JFnzFZt+vtNo4zex/0vIOL+YAGoCa3dIW6DWyXmu1yq4Z+hrNwGjXrPMBmV7DvYr4lAjhb1JjwJTookabeSohW7TBd13oGyg0oCupSHoZn3rMDeLVKSz1pd4BB6E7W+gjFHtJYxcqxNz8AgSs+zDuofeXYfprQO0kxeDZpaFkKbwQ379BXGbYovFJVC6HmbVzMPdSYQKuTT7SbIg3MsThUXocBshPrKXg/ELbQ7Quv55eTMndUeqZHuFuUULOPVazctcp7qSEN1997xYaqhqkjTA6bma8EAPuVfPuAHye3l7PVycmHxfYLzaJWYIbBxEOpzFd6gIPlJzRQuJv2sPZ0O8JzBQnHIz+1i17JOnkbslIB15uZN05wEDaUDW2VABh60C8AjM2qDaJoOFbotDw1tjH2+w0PNTN37GjnsVwNLoqnyFcioVcLILKyo7gPIjtzXcMdVc+07FTDneXDzLQ0K+h1sasnTtcAs2PKp96wV6Eb9nZe6506t9Y7tysYzYkeeiAlKiMX0XS4n+BZNWG8c5omc3yqMsci9gYuGDJ3HEHXlVtQz7OEl7tnERpxVFWxGoLfQCqaQGX3WQpw4syLEfRsVJWa21AruzL9KKEq/9a5uoGOi2LnlttdDHquAY2PnwLNMiffvSrwe1A+hZp7Ljlzf3ow1brUdQd1CXD9LT1glmaq2cOEN3Y9OxbAvj5fK3mCy29+pQFYVyPU/ek3TBXzf00BB7Qh0vxEIo7yOUQdTO6Rrc+zg15oVNXA37ckFY3MA9Rhwg/PenYCvWXL+8xXdN1nE/Bbkpm4yYLPVXDmh/RmR647M59npQzW0QTO25nPo5+z8Qr8MB/mn9B03HBn/jFuMX4m1GYYhmEYhmH+XP4HL2mClnrN5GUAAAAASUVORK5CYII=" alt="Logo InternetCtrl"></p>
+    <h1 style="text-align:center">Fuertes de la Casa</h1>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div id="container">
+
+<!-- Start	Product details -->
+	<div class="product-details">
+
+		<!-- 	Product Name -->
+	<h1>Pollo en salsa de champiñones</h1>
+
+	<span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-half-o" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+
+
+<!-- The most important information about the product -->
+		<p class="information">"the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+
+
+
+<!-- 		Control -->
+<div class="control">
+
+<!-- Start Button buying -->
+	<button class="btn">
+<!-- 		the Price -->
+	 <span class="price">49 $</span>
+<!-- 		shopping cart icon-->
+   <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+<!-- 		Buy Now / ADD to Cart-->
+   <span class="buy">Buy Now</span>
+ </button>
+	<!-- End Button buying -->
+
+</div>
+
+</div>
+
+<!-- 	End	Product details   -->
+
+
+
+<!-- 	Start product image & Information -->
+
+<div class="product-image">
+
+	<img src="https://t1.rg.ltmcdn.com/es/posts/4/0/5/pollo_con_champinones_6504_600_square.jpg" alt="Omar Dsoky">
+
+<!-- 	product Information-->
+<div class="info"><br>
+	<h2>The Description</h2>
+	<ul>
+		<li><strong>Sun Needs: </strong>Full Sun</li>
+		<li><strong>Soil Needs: </strong>Damp</li>
+		<li><strong>Zones: </strong>9 - 11</li>
+		<li><strong>Height: </strong>2 - 3 feet</li>
+		<li><strong>Blooms in: </strong>Mid‑Summer - Mid‑Fall</li>
+		<li><strong>Features: </strong>Tolerates heat</li>
+	</ul>
+</div>
+</div>
+<!--  End product image  -->
+
+
+</div>
+
+
+
+
+</div>
+
+    <div id="container">
+
+	<div class="product-details">
+
+	<h1>Pollo caminando</h1>
+	<span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+
+			<p class="information">Podemos apreciar a un pollo caminando con cierta pereza hacia algún lugar desconocido...</p>
+			<p class="information"><STRONG>SIMPLEMENTE EPICO!</STRONG></p>
+
+
+<div class="control">
+
+	<button class="btn">
+	 <span class="price">$666</span>
+   <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+   <span class="buy">Compralo</span>
+ </button>
+
+</div>
+
+</div>
+
+<div class="product-image">
+
+	<img src="https://c.tenor.com/AFbyH9xj2bQAAAAC/pollo-corriendo-pollo.gif" alt="">
+
+
+<div class="info">
+	<h2><br>Incluye:</h2>
+	<ul>
+		<li><strong>Bebida : </strong>Vino </li>
+		<li><strong>Shade : </strong>Olive green</li>
+		<li><strong>Decoration: </strong>balls and bells</li>
+		<li><strong>Material: </strong>Eco-Friendly</li>
+
+	</ul>
+</div>
+</div>
+
+</div>
+
+    <div id="container">
+
+	<div class="product-details">
+
+	<h1>Pollo caminando</h1>
+	<span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+
+			<p class="information">Podemos apreciar a un pollo caminando con cierta pereza hacia algún lugar desconocido...</p>
+			<p class="information"><STRONG>SIMPLEMENTE EPICO!</STRONG></p>
+
+
+<div class="control">
+
+	<button class="btn">
+	 <span class="price">$666</span>
+   <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+   <span class="buy">Compralo</span>
+ </button>
+
+</div>
+
+</div>
+
+<div class="product-image">
+
+	<img src="https://c.tenor.com/AFbyH9xj2bQAAAAC/pollo-corriendo-pollo.gif" alt="">
+
+
+<div class="info">
+	<h2><br>Incluye:</h2>
+	<ul>
+		<li><strong>Bebida : </strong>Vino </li>
+		<li><strong>Shade : </strong>Olive green</li>
+		<li><strong>Decoration: </strong>balls and bells</li>
+		<li><strong>Material: </strong>Eco-Friendly</li>
+
+	</ul>
+</div>
+</div>
+
+</div>
+
+<p style="text-align:center;"><img src="data:image/png;base64,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" alt="Logo InternetCtrl"></p>
+
+
+<br>
+
+
+
+
+    <p style="text-align:center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8RJ1FeUrd0feV1MNtHgYd9ilK0tzvuhcf1JRPeRQY6ClCduSjwvTDdH-cw9BmkhVWuw&usqp=CAU" alt="Logo InternetCtrl"></p>
+    <h1 style="text-align:center">Postres</h1>
+
+    </div>
+
+    <div id="container">
+
+	<div class="product-details">
+
+	<h1>Pollo caminando</h1>
+	<span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+
+			<p class="information">Podemos apreciar a un pollo caminando con cierta pereza hacia algún lugar desconocido...</p>
+			<p class="information"><STRONG>SIMPLEMENTE EPICO!</STRONG></p>
+
+
+<div class="control">
+
+	<button class="btn">
+	 <span class="price">$666</span>
+   <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+   <span class="buy">Compralo</span>
+ </button>
+
+</div>
+
+</div>
+
+<div class="product-image">
+
+	<img src="https://c.tenor.com/ENITMZpvJzwAAAAC/chicken-walking-frango-andando.gif" alt="">
+
+
+<div class="info">
+	<h2><br>Incluye:</h2>
+	<ul>
+		<li><strong>Bebida : </strong>Vino </li>
+		<li><strong>Shade : </strong>Olive green</li>
+		<li><strong>Decoration: </strong>balls and bells</li>
+		<li><strong>Material: </strong>Eco-Friendly</li>
+
+	</ul>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+
+    <div id="container">
+
+	<div class="product-details">
+
+	<h1>Pollo caminando</h1>
+	<span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+
+			<p class="information">Podemos apreciar a un pollo caminando con cierta pereza hacia algún lugar desconocido...</p>
+			<p class="information"><STRONG>SIMPLEMENTE EPICO!</STRONG></p>
+
+
+<div class="control">
+
+	<button class="btn">
+	 <span class="price">$666</span>
+   <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+   <span class="buy">Compralo</span>
+ </button>
+
+</div>
+
+</div>
+
+<div class="product-image">
+
+	<img src="https://c.tenor.com/ENITMZpvJzwAAAAM/chicken-walking-frango-andando.gif" alt="">
+
+
+<div class="info">
+	<h2><br>Incluye:</h2>
+	<ul>
+		<li><strong>Bebida : </strong>Vino </li>
+		<li><strong>Shade : </strong>Olive green</li>
+		<li><strong>Decoration: </strong>balls and bells</li>
+		<li><strong>Material: </strong>Eco-Friendly</li>
+
+	</ul>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+
+    <div id="container">
+
+	<div class="product-details">
+
+	<h1>Pollo caminando</h1>
+	<span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+
+			<p class="information">Podemos apreciar a un pollo caminando con cierta pereza hacia algún lugar desconocido...</p>
+			<p class="information"><STRONG>SIMPLEMENTE EPICO!</STRONG></p>
+
+
+<div class="control">
+
+	<button class="btn">
+	 <span class="price">$666</span>
+   <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+   <span class="buy">Compralo</span>
+ </button>
+
+</div>
+
+</div>
+
+<div class="product-image">
+
+	<img src="https://i.ytimg.com/vi/2t6TrBF0lnA/maxresdefault.jpg" alt="">
+
+
+<div class="info">
+	<h2><br>Incluye:</h2>
+	<ul>
+		<li><strong>Bebida : </strong>Vino </li>
+		<li><strong>Shade : </strong>Olive green</li>
+		<li><strong>Decoration: </strong>balls and bells</li>
+		<li><strong>Material: </strong>Eco-Friendly</li>
+
+	</ul>
+</div>
+</div>
+
+</div>
+    <p style="text-align:center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8RJ1FeUrd0feV1MNtHgYd9ilK0tzvuhcf1JRPeRQY6ClCduSjwvTDdH-cw9BmkhVWuw&usqp=CAU" alt="Logo InternetCtrl"></p>
+
+
+
+
+
+
+
+    <p style="text-align:center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwu7t6UMlSQTIyAgjQ4vHFVllO64U_ZZpxrg&usqp=CAU" alt="Logo InternetCtrl"></p>
+    <h1 style="text-align:center">Bebidas</h1>
+    </div>
+
+    <div id="container">
+
+	<div class="product-details">
+
+	<h1>Pollo caminando</h1>
+	<span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+
+			<p class="information">Podemos apreciar a un pollo caminando con cierta pereza hacia algún lugar desconocido...</p>
+			<p class="information"><STRONG>SIMPLEMENTE EPICO!</STRONG></p>
+
+
+<div class="control">
+
+	<button class="btn">
+	 <span class="price">$666</span>
+   <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+   <span class="buy">Compralo</span>
+ </button>
+
+</div>
+
+</div>
+
+<div class="product-image">
+
+	<img src="https://ih1.redbubble.net/image.3664010767.7469/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="">
+
+
+<div class="info">
+	<h2><br>Incluye:</h2>
+	<ul>
+		<li><strong>Bebida : </strong>Vino </li>
+		<li><strong>Shade : </strong>Olive green</li>
+		<li><strong>Decoration: </strong>balls and bells</li>
+		<li><strong>Material: </strong>Eco-Friendly</li>
+
+	</ul>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+
+    <div id="container">
+
+	<div class="product-details">
+
+	<h1>Pollo caminando</h1>
+	<span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+	</span>
+
+			<p class="information">Podemos apreciar a un pollo caminando con cierta pereza hacia algún lugar desconocido...</p>
+			<p class="information"><STRONG>SIMPLEMENTE EPICO!</STRONG></p>
+
+
+<div class="control">
+
+	<button class="btn">
+	 <span class="price">$666</span>
+   <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+   <span class="buy">Compralo</span>
+ </button>
+
+</div>
+
+</div>
+
+<div class="product-image">
+
+	<img src="https://ih1.redbubble.net/image.3664010767.7469/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="">
+
+
+<div class="info">
+	<h2><br>Incluye:</h2>
+	<ul>
+		<li><strong>Bebida : </strong>Vino </li>
+		<li><strong>Shade : </strong>Olive green</li>
+		<li><strong>Decoration: </strong>balls and bells</li>
+		<li><strong>Material: </strong>Eco-Friendly</li>
+
+	</ul>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+    </div>
+
+    <div id="container">
+
+	<div class="product-details">
+
+	<h1>ORUGA FUMANDO</h1>
+	<span class="hint-star star">
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+        		<i class="fa fa-star-o" aria-hidden="true"></i>
+        		<i class="fa fa-star-o" aria-hidden="true"></i>
+		<i class="fa fa-star-o" aria-hidden="true"></i>
+
+	</span>
+
+			<p class="information">"La vida de un crítico es sencilla en muchos aspectos. Arriesgamos poco y tenemos poder sobre aquellos que ofrecen su trabajo y su servicio a nuestro juicio."</p>
+			<p class="information"><STRONG>NO AMIGO, FUMAR NO TE HACE VER COOL</STRONG></p>
+
+
+<div class="control">
+
+	<button class="btn">
+	 <span class="price">$2</span>
+   <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+   <span class="buy">Comprar</span>
+ </button>
+
+</div>
+
+</div>
+
+<div class="product-image">
+
+	<img src="https://ih1.redbubble.net/image.3664010767.7469/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="">
+
+
+<div class="info">
+	<h2><br>Incluye:</h2>
+	<ul>
+		<li><strong>Bebida : </strong>Vino </li>
+		<li><strong>Shade : </strong>Olive green</li>
+		<li><strong>Decoration: </strong>balls and bells</li>
+		<li><strong>Material: </strong>Eco-Friendly</li>
+
+	</ul>
+</div>
+</div>
+
+</div>
+    <p style="text-align:center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwu7t6UMlSQTIyAgjQ4vHFVllO64U_ZZpxrg&usqp=CAU" alt="Logo InternetCtrl"></p>
+
+{% endblock %}

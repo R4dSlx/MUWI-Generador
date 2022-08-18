@@ -1,8 +1,31 @@
- {% extends "Doctor.html" %}
 
-{% block title %} Banke-T | Acerca de... {% endblock %}
+{% extends 'Doctor.html' %}
 
-{% block content %} 
-<h1>Este contenido forma parte de la plantilla acerca</h1>
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'img/acerca.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1><i>Acerca de</i></h1>
+    <span class="subheading"><b>NOSOTROS</b></span><br><br><br><br>
+{% endblock %}
+
+{% block content %}
+    <p style="text-align:center;"><img src="https://pm1.narvii.com/6452/918bd286a4c2a6475f4595e37be2043ddfc4a3ad_hq.jpg" alt="Logo InternetCtrl"></p>
+
+
+
+    <div class="container">
+      <div class="row">   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'img/cu.webp' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Curcabein</h2>
+            <p><b>Curcavein</b> fue un cantante, músico y compositor estadounidense, conocido por haber sido el cantante, guitarrista y principal compositor de la banda grunge elpanto mcDonal</p>
+
+      </div>  
+    </div>
+        <p style="text-align:center;"><img src="https://pm1.narvii.com/6452/918bd286a4c2a6475f4595e37be2043ddfc4a3ad_hq.jpg" alt="Logo InternetCtrl"></p>
 
 {% endblock %}

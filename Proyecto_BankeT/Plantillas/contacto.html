@@ -1,12 +1,30 @@
  {% extends "Doctor.html" %}
-
+{% block background %}{% load static %}{% static 'img/ac1.jpg' %}{% endblock %}
 {% block title %} Banke-T | Contacto {% endblock %}
 
-{% block content %}
-<h1>Este contenido forma parte de la plantilla contacto</h1>
-    <h2>ola</h2>
-    {% load static %}
-    <img src="{% static 'img/pollo.jpg' %}"
-
+{% block headers %}
+ <h1>Contacto</h1>
+ <span class="subheading"><strong>ASESÓRATE</strong></span><br><br><br><br><br><br><br><br>
 {% endblock %}
+
+{% block content %}
+    <hr>
+<h1>Si quiere saber mas sobre nuestras promociones....</h1>
+<h2>Contactenos</h2>
+<h2>Número de Telefono </h2>      <p style="color:blue; font-size:35px"> -----     0987453352</p>
+<h3>Correos  </h3>    <p style="color:blue; font-size:35px"> -----     mepicanloscocosay@hotmail.es</p>
+<marquee>
+<table align="center" width="100"border="2">
+
+<tr>
+    <img src="{% static 'img/pollosi.gif' %}">
+   <h1>   lleve nuestras promociones</h1>
+</tr>
+</table>
+</marquee>
+<marquee behavior="alternate"  scrolldelay="1" scrollamount="4" direction="left" loop="100" onmouseout="this.start()" onmouseover="this.stop()"><a href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada" src="{% static 'img/1.png' %}" height ="200px" width="200px"/></a>&nbsp;&nbsp;<a href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada"  src="{% static 'img/2.png' %}"height ="200px" width="200px" href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada" src="{% static 'img/3.png' %}" height ="200px" width="200px"/></a>&nbsp;&nbsp;<a href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada"  src="{% static 'img/4.png' %}"height ="200px" width="200px"href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada" src="{% static 'img/5.png' %}" height ="200px" width="200px"/></a>&nbsp;&nbsp;<a href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada"  src="{% static 'img/6.png' %}"height ="200px" width="200px"href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada" src="{% static 'img/7.png' %}" height ="200px" width="200px"/></a>&nbsp;&nbsp;<a href="http://127.0.0.1:8000/gestion}" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada"  src="{% static 'img/8.png' %}"height ="200px" width="200px"href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada" src="{% static 'img/9.png' %}" height ="200px" width="200px"/></a>&nbsp;&nbsp;<a href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada"  src="{% static 'img/10.png' %}"height ="200px" width="200px" /></a></marquee>
+{% endblock %}
+
+
+
 

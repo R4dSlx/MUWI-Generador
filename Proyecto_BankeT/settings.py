@@ -46,8 +46,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'zeus.apps.ZeusConfig',
     'Cliente',
+    'comidas',
     'crispy_forms',
 
 ]
@@ -69,7 +69,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': ["C:/Proyecto_BankeT_PostgreSQL/Proyecto_BankeT/Plantillas/"],
-        'APP_DIRS': ["C:/Proyecto_BankeT_PostgreSQL/zeus/templates/"],
+        'APP_DIRS': ["C:/Proyecto_BankeT_PostgreSQL/Cliente/templates/", "C:/Proyecto_BankeT_PostgreSQL/comidas/templates/"],
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',

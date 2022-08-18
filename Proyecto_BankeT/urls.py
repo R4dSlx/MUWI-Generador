@@ -18,9 +18,9 @@ from django.urls import path, include
 from django.contrib.auth.views import LoginView
 from django.contrib.auth import views as auth_views
 from Proyecto_BankeT.views import *
-from . import views 
-from zeus.views import *
+from . import views
 from Cliente.views import *
+from comidas.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,7 +28,6 @@ urlpatterns = [
     path('hija2/', hija2),
     path('register/', register_request, name="register"),
     path('login/', login_request, name="login"),
-    path('gestion', home, name="gestioncomidas"),
     path('', views.inicio , name='Doctor'),
     path('contacto/', views.contacto,  name="contacto"),
     path('acerca/', views.acerca,  name="acerca"),
@@ -36,6 +35,7 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(template_name="Cliente/password/password_reset_confirm.html"), name='password_reset_confirm'),
     path('reset/done/', auth_views.PasswordResetCompleteView.as_view(template_name='Cliente/password/password_reset_complete.html'), name='password_reset_complete'),
-    path("password_reset", password_reset_request, name="password_reset")
+    path("password_reset", password_reset_request, name="password_reset"),
+    path('banquetes/', portfolio, name="banquetes"),
 
 ]
