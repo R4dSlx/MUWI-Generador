@@ -20,6 +20,6 @@ def acerca(request):
 	return render(request, "acerca.html", {})
 
 def hija2(request):
-	return render(request, "P2.html", {})
+	return render(request, "fl.pug", {})
 
 

@@ -11,7 +11,7 @@
 
 {% block content %}
         <link href="{% static 'css/comi2.css' %}" rel="stylesheet">
-    <p style="text-align:center;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAj0AAABYCAMAAAAp6bbzAAAAk1BMVEX///8AAADe3t57e3v8/Pz29vbo6Ojl5eXv7+/r6+ugoKD19fW3t7fW1tbIyMjR0dEoKChAQECmpqbCwsJpaWmMjIyTk5Otra1NTU22trZ0dHRjY2OYmJgVFRXDw8Pb29stLS1bW1tISEgfHx8rKys4ODhWVlYMDAw6OjobGxuEhIRvb28yMy9gYltlZ2pBQ0A7OTSxbdKjAAAI4UlEQVR4nO2d2ZaiyhKGMyAZZB5kVES0lBL77H3e/+lORCZWW93VQ+2LjX2M74JGCmtlrfV3zAlCMAzDMAzDMAzD/HPk0gtg/kyMJivXh3RTZMbSS2H+KKzddCgcbXgse1tn/sILYv4U5M7b5g7Khs57PNhWtZ7CpZfF/AkERb8iU+PYePAjPORSyFVesn6YXyA3gRAhCSdE8yNc/CRyS7ihsIPtwmtjHh0X8BCt6EDqcSo85CtSUS7aYNm1MY+OOwolFyF2Sj0ZnRnCr9B/bYtl18Y8Oj7ZnoY8V0Xq6clbRZGwPBHb+XrZtTGPjjVinl6R7dmSekIyN3EurFL0YXhYeHHMgyMvqB6PbM+WioSxSYdKyEmsdqv9smtjHh15xGzdI7NTKvVc8RBi8NMK2cjOWnh1zINzdFE9JJyCDtEgdPCDIU8mRi45Mz+F1KPMTkFl5ohCnb4U4oyaEmx7mJ8ij6iQkoQzxXiIXvBgTFo9MuGWO/MzZIfeqSDhTNSkiCiBN1ohDpbI7HThxTEPjhzRaxUknGsjSD1obgwMelJfVPF56dUxj4K1OWy/90SyC1E9Ozw7a/WgKTIwdN67oslZPcyMuT7AJf72qjzipZIaWhtPkHowee9RNYkhmqb+91fJPCatB9DV+beXE1IP9UZN1aQA/BimaJIMUVWsHmYmBjhBcv22b/6KFzwyOyZmWqgePI0TYUGI6vk+ag55auNJ2UCzR/ns3l89F6ge6m6ZmGmhevA0OqF6YlE1r+9vtbcnmP6t1TKPhXsZ8wT25+jd1fVGiIq6W6YqM0MpRJ4q9WT5fb1H5mdAeODwWTHgEpwhPZICnCDXbQgTg5uARjEK9FPSIeOC8Y6P6vHir7Vm30tIO5AstHRmeYwOSm8PYMiWpKASsAlFs6PUvHoR7pcK0BRtB1RPLkoHXP09u1DSAS/lebEnxj3DHtWTpFoNNEg4oXvqKTyOL+I/EB0OaIVaVE8oJndU6rFNfffBidlxPTce3INuyry4DmZaRXE6bQBGgH16TNIainxtJ6geZ9ZO12DcfVp6+cyyhKd7+RykCcehaKIKrtEBoJLyL/Cl5dtxkJWjv5q1c4owgHagWXr1zNKYzp0BOtXaPf2FyRb6NE/EcHmb6ulMGC/6NurC10fuuT87cr+W/fGrfo4qsbrAVQwAf4sMqFmhwcgoVNqR9HiELWXzzHNDNWfLen1Tj7Y9NVxQHiM4Obqv263gVKSd84Vq0T3AarFFMw9CgILYuzJ9k4+qHpYAuxDVU7oAt/aWBHWTqx/M8sp1ZkZEpIgXVxxu6lGOCi3SRnwB+CLOALa+U+IP1+1LqkzOFm7VH+aJ8bW/CsV1Vo8Sh0RXZhVofHp0VtvbnV6N0bJBnTEbgCuFjBC5Fk0gijvPRa6rMVA9E7quuTvqQy6z+UsbNj2MIr6VCrWOdNPdINf1X0zBKPXSTw9bwduIBvotc5nFPhhhaz4h756H0Wv5bISxh7dMKsXsayLXFegWBnqr0ZtNT3xLzYhs6b9lMdpQ5RxPyLuoxejUtYuDmhnmax76MLJKnjXOdsYGS5d+VuPcUlVslv1DliQQfm88I++jFkfLB2OeoZ0vRZDE7oE8VDpXfGzwb2YJ7mYK7aX/lMXoeW+txh/m/039Zr4SQBOvCvJa+72+skL1uFKIlpwcw9zRavkUN2FMtQicEjq5us1hWJ0lNjlFzCNvSWbeU2r53DZtNRaqZ42u3XmbfL7IuhDUrOCxHuZbMqWeu8Z5FSW1Y9j+7UqyaVSSkX38feaJkXO9J8JTIw+qLGuaYhd4RXs1Cy+IbHHMlXj4AXTMR6ie17gdPMOSYZWpvCyvv9TrwnZSSI+iwZ8nHPQwH2Io6zPIoMZ/NpMjrGgYkvHy6lGP9FUZJ35tBfMDVjToI+f861wE7VVvveliUUNCVaHq17+EeVIC6lVUcyl1PNdQ3M7lWv3LW4+ZH4Fa6WBc3yrxbQfT7VzvHeXeKPMDnAOKJIWXm2L25rl+23LRkHraX/8S5jmhrRW9QCd1axw31/VmujVBnSPn6swPWdN8s53BAIaKmkfzStOqkS4ithmMA79pkvkYtDHJKr52XQ7FNCTHYUp1vtX22XnfVtuiDTnfYj4E4+XUD4w4KmsaSU0w91JFnzFZt+vtNo4zex/0vIOL+YAGoCa3dIW6DWyXmu1yq4Z+hrNwGjXrPMBmV7DvYr4lAjhb1JjwJTookabeSohW7TBd13oGyg0oCupSHoZn3rMDeLVKSz1pd4BB6E7W+gjFHtJYxcqxNz8AgSs+zDuofeXYfprQO0kxeDZpaFkKbwQ379BXGbYovFJVC6HmbVzMPdSYQKuTT7SbIg3MsThUXocBshPrKXg/ELbQ7Quv55eTMndUeqZHuFuUULOPVazctcp7qSEN1997xYaqhqkjTA6bma8EAPuVfPuAHye3l7PVycmHxfYLzaJWYIbBxEOpzFd6gIPlJzRQuJv2sPZ0O8JzBQnHIz+1i17JOnkbslIB15uZN05wEDaUDW2VABh60C8AjM2qDaJoOFbotDw1tjH2+w0PNTN37GjnsVwNLoqnyFcioVcLILKyo7gPIjtzXcMdVc+07FTDneXDzLQ0K+h1sasnTtcAs2PKp96wV6Eb9nZe6506t9Y7tysYzYkeeiAlKiMX0XS4n+BZNWG8c5omc3yqMsci9gYuGDJ3HEHXlVtQz7OEl7tnERpxVFWxGoLfQCqaQGX3WQpw4syLEfRsVJWa21AruzL9KKEq/9a5uoGOi2LnlttdDHquAY2PnwLNMiffvSrwe1A+hZp7Ljlzf3ow1brUdQd1CXD9LT1glmaq2cOEN3Y9OxbAvj5fK3mCy29+pQFYVyPU/ek3TBXzf00BB7Qh0vxEIo7yOUQdTO6Rrc+zg15oVNXA37ckFY3MA9Rhwg/PenYCvWXL+8xXdN1nE/Bbkpm4yYLPVXDmh/RmR647M59npQzW0QTO25nPo5+z8Qr8MB/mn9B03HBn/jFuMX4m1GYYhmEYhmH+XP4HL2mClnrN5GUAAAAASUVORK5CYII=" alt="Logo InternetCtrl"></p>
+    <p id="fu" style="text-align:center;"><img src="data:image/png;base64,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" alt="Logo InternetCtrl"></p>
     <h1 style="text-align:center">Fuertes de la Casa</h1>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div id="container">
@@ -26,13 +26,13 @@
 		<i class="fa fa-star" aria-hidden="true"></i>
 		<i class="fa fa-star" aria-hidden="true"></i>
 		<i class="fa fa-star" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
 		<i class="fa fa-star-half-o" aria-hidden="true"></i>
-		<i class="fa fa-star-o" aria-hidden="true"></i>
 	</span>
 
 
 <!-- The most important information about the product -->
-		<p class="information">"the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+		<p class="information">"Exquisito y con mucho sabor. Un plato con el que se te hará agua la boca. Resulta una delicia y la salsa le aporta un toque riquísimo con el que consigues un plato único de diez."</p>
 
 
 
@@ -42,11 +42,11 @@
 <!-- Start Button buying -->
 	<button class="btn">
 <!-- 		the Price -->
-	 <span class="price">49 $</span>
+	 <span class="price">$15</span>
 <!-- 		shopping cart icon-->
    <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
 <!-- 		Buy Now / ADD to Cart-->
-   <span class="buy">Buy Now</span>
+   <span class="buy">PRECIO</span>
  </button>
 	<!-- End Button buying -->
 
@@ -65,15 +65,14 @@
 	<img src="https://t1.rg.ltmcdn.com/es/posts/4/0/5/pollo_con_champinones_6504_600_square.jpg" alt="Omar Dsoky">
 
 <!-- 	product Information-->
-<div class="info"><br>
-	<h2>The Description</h2>
+<div class="info">
+	<h2><br>Incluye:</h2>
 	<ul>
-		<li><strong>Sun Needs: </strong>Full Sun</li>
-		<li><strong>Soil Needs: </strong>Damp</li>
-		<li><strong>Zones: </strong>9 - 11</li>
-		<li><strong>Height: </strong>2 - 3 feet</li>
-		<li><strong>Blooms in: </strong>Mid‑Summer - Mid‑Fall</li>
-		<li><strong>Features: </strong>Tolerates heat</li>
+		<li><strong>Bebida: </strong>Jugo de Naranja</li>
+		<li><strong>Ensalada: </strong>Rusa</li>
+		<li><strong>Pollo: </strong>Criollo</li>
+		<li><strong>Mini postre: </strong>Ferrero</li>
+
 	</ul>
 </div>
 </div>
@@ -91,7 +90,7 @@
 
 	<div class="product-details">
 
-	<h1>Pollo caminando</h1>
+	<h1>Bistec de Pescado</h1>
 	<span class="hint-star star">
 		<i class="fa fa-star" aria-hidden="true"></i>
 		<i class="fa fa-star" aria-hidden="true"></i>
@@ -100,16 +99,14 @@
 		<i class="fa fa-star-o" aria-hidden="true"></i>
 	</span>
 
-			<p class="information">Podemos apreciar a un pollo caminando con cierta pereza hacia algún lugar desconocido...</p>
-			<p class="information"><STRONG>SIMPLEMENTE EPICO!</STRONG></p>
-
+			<p class="information">Esta receta de pescado a la plancha es un platillo bastante agradecido, sencillo y rico por lo que lo convierte en uno de los más recomendados gracias a su valor nutricional.</p>
 
 <div class="control">
 
 	<button class="btn">
-	 <span class="price">$666</span>
+	 <span class="price">$12</span>
    <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-   <span class="buy">Compralo</span>
+   <span class="buy">PRECIO</span>
  </button>
 
 </div>
@@ -118,16 +115,16 @@
 
 <div class="product-image">
 
-	<img src="https://c.tenor.com/AFbyH9xj2bQAAAAC/pollo-corriendo-pollo.gif" alt="">
+	<img src="http://assets.kraftfoods.com/recipe_images/opendeploy/75456_640x428.jpg" alt="">
 
 
 <div class="info">
 	<h2><br>Incluye:</h2>
 	<ul>
-		<li><strong>Bebida : </strong>Vino </li>
-		<li><strong>Shade : </strong>Olive green</li>
-		<li><strong>Decoration: </strong>balls and bells</li>
-		<li><strong>Material: </strong>Eco-Friendly</li>
+		<li><strong>Bebida: </strong>Jugo de mora </li>
+		<li><strong>Crema/Salsa: </strong>Maní</li>
+		<li><strong>Pescado: </strong>Picudo</li>
+		<li><strong>Mini postre: </strong>Bon-o-Bon</li>
 
 	</ul>
 </div>
@@ -139,25 +136,24 @@
 
 	<div class="product-details">
 
-	<h1>Pollo caminando</h1>
+        <h1>Filete de Res <br> <i>(término medio)</i></h1>
 	<span class="hint-star star">
 		<i class="fa fa-star" aria-hidden="true"></i>
 		<i class="fa fa-star" aria-hidden="true"></i>
 		<i class="fa fa-star" aria-hidden="true"></i>
 		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star-o" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
 	</span>
-
-			<p class="information">Podemos apreciar a un pollo caminando con cierta pereza hacia algún lugar desconocido...</p>
-			<p class="information"><STRONG>SIMPLEMENTE EPICO!</STRONG></p>
+			<p class="information"><STRONG><i>Buque Insignia Banke-T</i></STRONG></p>
+			<p class="information">Plato exquisito cuya preparación es hecha por nuestros mejores cocineros. Se caracteriza por conservar el centro rojo, jugosa y apenas se hunde al tocarla.</p>
 
 
 <div class="control">
 
 	<button class="btn">
-	 <span class="price">$666</span>
+	 <span class="price">$20</span>
    <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-   <span class="buy">Compralo</span>
+   <span class="buy">Precio</span>
  </button>
 
 </div>
@@ -166,24 +162,21 @@
 
 <div class="product-image">
 
-	<img src="https://c.tenor.com/AFbyH9xj2bQAAAAC/pollo-corriendo-pollo.gif" alt="">
+	<img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/que-es-el-liquido-en-la-carne-asada-se-come.jpg" alt="">
 
 
 <div class="info">
 	<h2><br>Incluye:</h2>
 	<ul>
-		<li><strong>Bebida : </strong>Vino </li>
-		<li><strong>Shade : </strong>Olive green</li>
-		<li><strong>Decoration: </strong>balls and bells</li>
-		<li><strong>Material: </strong>Eco-Friendly</li>
+		<li><strong>Bebida: </strong>Vino Tinto</li>
+		<li><strong>Ensalada: </strong>César</li>
+		<li><strong>Extra: </strong>Pan de Ajo</li>
+		<li><strong>Mini postre: </strong>Flan</li>
 
 	</ul>
 </div>
 </div>
-
 </div>
-
-<p style="text-align:center;"><img src="data:image/png;base64,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" alt="Logo InternetCtrl"></p>
 
 
 <br>
@@ -191,7 +184,7 @@
 
 
 
-    <p style="text-align:center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8RJ1FeUrd0feV1MNtHgYd9ilK0tzvuhcf1JRPeRQY6ClCduSjwvTDdH-cw9BmkhVWuw&usqp=CAU" alt="Logo InternetCtrl"></p>
+    <p id="po" style="text-align:center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8RJ1FeUrd0feV1MNtHgYd9ilK0tzvuhcf1JRPeRQY6ClCduSjwvTDdH-cw9BmkhVWuw&usqp=CAU" alt="Logo InternetCtrl"></p>
     <h1 style="text-align:center">Postres</h1>
 
     </div>
@@ -200,25 +193,24 @@
 
 	<div class="product-details">
 
-	<h1>Pollo caminando</h1>
+	<h1>Flan de miel con elao</h1>
 	<span class="hint-star star">
 		<i class="fa fa-star" aria-hidden="true"></i>
 		<i class="fa fa-star" aria-hidden="true"></i>
 		<i class="fa fa-star" aria-hidden="true"></i>
 		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star-o" aria-hidden="true"></i>
+		<i class="fa fa-star-half-o" aria-hidden="true"></i>
 	</span>
 
-			<p class="information">Podemos apreciar a un pollo caminando con cierta pereza hacia algún lugar desconocido...</p>
-			<p class="information"><STRONG>SIMPLEMENTE EPICO!</STRONG></p>
+			<p class="description">Un apetitoso postre  matar todas esas ganas que traes. Además de no ser empalagoso, es muy economico y delicioso.</p>
 
 
 <div class="control">
 
 	<button class="btn">
-	 <span class="price">$666</span>
+	 <span class="price">$5</span>
    <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-   <span class="buy">Compralo</span>
+   <span class="buy">LATAS</span>
  </button>
 
 </div>
@@ -227,19 +219,10 @@
 
 <div class="product-image">
 
-	<img src="https://c.tenor.com/ENITMZpvJzwAAAAC/chicken-walking-frango-andando.gif" alt="">
+	<img src="{% static "img/elao.jpg" %}" alt="">
 
 
-<div class="info">
-	<h2><br>Incluye:</h2>
-	<ul>
-		<li><strong>Bebida : </strong>Vino </li>
-		<li><strong>Shade : </strong>Olive green</li>
-		<li><strong>Decoration: </strong>balls and bells</li>
-		<li><strong>Material: </strong>Eco-Friendly</li>
 
-	</ul>
-</div>
 </div>
 
 </div>
@@ -251,7 +234,7 @@
 
 	<div class="product-details">
 
-	<h1>Pollo caminando</h1>
+	<h1>bizcocho con helado de chocolate</h1>
 	<span class="hint-star star">
 		<i class="fa fa-star" aria-hidden="true"></i>
 		<i class="fa fa-star" aria-hidden="true"></i>
@@ -260,16 +243,15 @@
 		<i class="fa fa-star-o" aria-hidden="true"></i>
 	</span>
 
-			<p class="information">Podemos apreciar a un pollo caminando con cierta pereza hacia algún lugar desconocido...</p>
-			<p class="information"><STRONG>SIMPLEMENTE EPICO!</STRONG></p>
+			<p class="information">Un esponjoso biscocho de chocolate con el que variar de sabor según el helado que escojas, puede ser vainilla, chocolate o ron pasas.</p>
 
 
 <div class="control">
 
 	<button class="btn">
-	 <span class="price">$666</span>
+	 <span class="price">$3.50</span>
    <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-   <span class="buy">Compralo</span>
+   <span class="buy">PRECIO</span>
  </button>
 
 </div>
@@ -278,19 +260,9 @@
 
 <div class="product-image">
 
-	<img src="https://c.tenor.com/ENITMZpvJzwAAAAM/chicken-walking-frango-andando.gif" alt="">
+	<img src="{% static "img/elao2.jpg" %}" alt="">
 
 
-<div class="info">
-	<h2><br>Incluye:</h2>
-	<ul>
-		<li><strong>Bebida : </strong>Vino </li>
-		<li><strong>Shade : </strong>Olive green</li>
-		<li><strong>Decoration: </strong>balls and bells</li>
-		<li><strong>Material: </strong>Eco-Friendly</li>
-
-	</ul>
-</div>
 </div>
 
 </div>
@@ -302,25 +274,26 @@
 
 	<div class="product-details">
 
-	<h1>Pollo caminando</h1>
+	<h1>Banana split</h1>
 	<span class="hint-star star">
 		<i class="fa fa-star" aria-hidden="true"></i>
 		<i class="fa fa-star" aria-hidden="true"></i>
 		<i class="fa fa-star" aria-hidden="true"></i>
 		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star-o" aria-hidden="true"></i>
+		<i class="fa fa-star" aria-hidden="true"></i>
 	</span>
 
-			<p class="information">Podemos apreciar a un pollo caminando con cierta pereza hacia algún lugar desconocido...</p>
-			<p class="information"><STRONG>SIMPLEMENTE EPICO!</STRONG></p>
+			<p class="information"><STRONG><i>Buque Insignia Banke-T</i></STRONG></p>
+			<p class="information">Es un postre que llevan dos guineos en dos y bolas de helado de vainilla, chocolate y fresa. Se le agrega jarabe de chocolate y de fresa. Se decora con crema batida, nueces y una cereza encima.</p>
+
 
 
 <div class="control">
 
 	<button class="btn">
-	 <span class="price">$666</span>
+	 <span class="price">$8</span>
    <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-   <span class="buy">Compralo</span>
+   <span class="buy">LATAS</span>
  </button>
 
 </div>
@@ -329,31 +302,20 @@
 
 <div class="product-image">
 
-	<img src="https://i.ytimg.com/vi/2t6TrBF0lnA/maxresdefault.jpg" alt="">
+	<img src="{% static "img/elao3.jpg" %}" alt="">
 
 
-<div class="info">
-	<h2><br>Incluye:</h2>
-	<ul>
-		<li><strong>Bebida : </strong>Vino </li>
-		<li><strong>Shade : </strong>Olive green</li>
-		<li><strong>Decoration: </strong>balls and bells</li>
-		<li><strong>Material: </strong>Eco-Friendly</li>
 
-	</ul>
-</div>
 </div>
 
 </div>
-    <p style="text-align:center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8RJ1FeUrd0feV1MNtHgYd9ilK0tzvuhcf1JRPeRQY6ClCduSjwvTDdH-cw9BmkhVWuw&usqp=CAU" alt="Logo InternetCtrl"></p>
 
 
 
 
 
 
-
-    <p style="text-align:center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwu7t6UMlSQTIyAgjQ4vHFVllO64U_ZZpxrg&usqp=CAU" alt="Logo InternetCtrl"></p>
+    <p id="be" style="text-align:center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwu7t6UMlSQTIyAgjQ4vHFVllO64U_ZZpxrg&usqp=CAU" alt="Logo InternetCtrl"></p>
     <h1 style="text-align:center">Bebidas</h1>
     </div>
 
@@ -361,25 +323,17 @@
 
 	<div class="product-details">
 
-	<h1>Pollo caminando</h1>
-	<span class="hint-star star">
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star-o" aria-hidden="true"></i>
-	</span>
-
-			<p class="information">Podemos apreciar a un pollo caminando con cierta pereza hacia algún lugar desconocido...</p>
-			<p class="information"><STRONG>SIMPLEMENTE EPICO!</STRONG></p>
+	<h1>Sangría<br></h1>
+        <p class="information">JARRA DE SANGRÍA CLÁSICA:</p>
+        			<p class="information"><strong>6 vasos</strong></p>
 
 
 <div class="control">
 
 	<button class="btn">
-	 <span class="price">$666</span>
+	 <span class="price">$6</span>
    <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-   <span class="buy">Compralo</span>
+   <span class="buy">LATAS</span>
  </button>
 
 </div>
@@ -388,19 +342,9 @@
 
 <div class="product-image">
 
-	<img src="https://ih1.redbubble.net/image.3664010767.7469/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="">
+	<img src="https://images.hola.com/imagenes/cocina/recetas/20200514167988/receta-sangria-clasica/0-823-899/sangria-m.jpg" alt="">
 
 
-<div class="info">
-	<h2><br>Incluye:</h2>
-	<ul>
-		<li><strong>Bebida : </strong>Vino </li>
-		<li><strong>Shade : </strong>Olive green</li>
-		<li><strong>Decoration: </strong>balls and bells</li>
-		<li><strong>Material: </strong>Eco-Friendly</li>
-
-	</ul>
-</div>
 </div>
 
 </div>
@@ -412,25 +356,18 @@
 
 	<div class="product-details">
 
-	<h1>Pollo caminando</h1>
-	<span class="hint-star star">
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star-o" aria-hidden="true"></i>
-	</span>
+	<h1>Vino</h1>
 
-			<p class="information">Podemos apreciar a un pollo caminando con cierta pereza hacia algún lugar desconocido...</p>
-			<p class="information"><STRONG>SIMPLEMENTE EPICO!</STRONG></p>
+        <p class="information">BOTELLA DE VINO: TINTO/BLANCO/ROSADO</p>
+        			<p class="information"><strong>Aproximadamente 15 copas por cada botella</strong></p>
 
 
 <div class="control">
 
 	<button class="btn">
-	 <span class="price">$666</span>
+	 <span class="price">$16</span>
    <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-   <span class="buy">Compralo</span>
+   <span class="buy">LATAS</span>
  </button>
 
 </div>
@@ -439,19 +376,10 @@
 
 <div class="product-image">
 
-	<img src="https://ih1.redbubble.net/image.3664010767.7469/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="">
+	<img src="{% static "img/vino.jpg" %}" alt="">
 
 
-<div class="info">
-	<h2><br>Incluye:</h2>
-	<ul>
-		<li><strong>Bebida : </strong>Vino </li>
-		<li><strong>Shade : </strong>Olive green</li>
-		<li><strong>Decoration: </strong>balls and bells</li>
-		<li><strong>Material: </strong>Eco-Friendly</li>
 
-	</ul>
-</div>
 </div>
 
 </div>
@@ -466,26 +394,23 @@
 
 	<div class="product-details">
 
-	<h1>ORUGA FUMANDO</h1>
-	<span class="hint-star star">
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<i class="fa fa-star-o" aria-hidden="true"></i>
-        		<i class="fa fa-star-o" aria-hidden="true"></i>
-        		<i class="fa fa-star-o" aria-hidden="true"></i>
-		<i class="fa fa-star-o" aria-hidden="true"></i>
+	<h1>Jugos/Come y bebe</h1>
+
 
 	</span>
 
-			<p class="information">"La vida de un crítico es sencilla en muchos aspectos. Arriesgamos poco y tenemos poder sobre aquellos que ofrecen su trabajo y su servicio a nuestro juicio."</p>
-			<p class="information"><STRONG>NO AMIGO, FUMAR NO TE HACE VER COOL</STRONG></p>
+        <p class="information">JUGO: NARANJA/MORA</p>
+        <p class="information"><strong>Aproximadamente 6 copas por cada botella</strong></p>
+        <p class="information">COME Y BEBE:</p>
+        <p class="information"><strong>Personales</strong></p>
 
 
 <div class="control">
 
 	<button class="btn">
-	 <span class="price">$2</span>
+	 <span class="price">$5 - $1</span>
    <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-   <span class="buy">Comprar</span>
+   <span class="buy">PRECIO</span>
  </button>
 
 </div>
@@ -494,22 +419,32 @@
 
 <div class="product-image">
 
-	<img src="https://ih1.redbubble.net/image.3664010767.7469/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="">
+	<img src="https://static5.depositphotos.com/1006597/433/i/600/depositphotos_4336177-stock-photo-orange-juice.jpg" alt="">
 
 
-<div class="info">
-	<h2><br>Incluye:</h2>
-	<ul>
-		<li><strong>Bebida : </strong>Vino </li>
-		<li><strong>Shade : </strong>Olive green</li>
-		<li><strong>Decoration: </strong>balls and bells</li>
-		<li><strong>Material: </strong>Eco-Friendly</li>
 
-	</ul>
-</div>
 </div>
 
 </div>
-    <p style="text-align:center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwu7t6UMlSQTIyAgjQ4vHFVllO64U_ZZpxrg&usqp=CAU" alt="Logo InternetCtrl"></p>
+    <p style="text-align:center;"><img src="data:image/png;base64,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" alt="Logo InternetCtrl"></p>
+
+<div class="card bg-warning mb-xl-2 " style="max-width:25rem; left: 480px">
+  <div class="card-header"><b><i>¡ATENCIÓN!</i></b>
+                    <span class="fa-stack -align-right">
+                    <i class="fa fa-2x fa-stack-2x"></i>
+                    <i class="fa fa-info-circle fa-stack-2x fa-inverse"></i>
+                  </span></div>
+  <div class="card-body">
+    <h5 class="card-title"><b>Acerca de compras en linea:</b></h5>
+    <p class="card-text">Actualmente el servicio de compras en línea está desabilitado.</p>
+          <p class="card-text">Cuando lo tengamos listo, te lo haremos saber por correo, mientras tanto, sigue disfrutando de nuestras promociones</p>
+  </div>
+
+    </div>
+    <p style="text-align:center;"><img src="data:image/png;base64,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" alt="Logo InternetCtrl"></p>
+<br><br>
+
+
 
 {% endblock %}
+		<i class="fa fa-star-half-o" aria-hidden="true"></i>

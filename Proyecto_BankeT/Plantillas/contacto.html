@@ -3,27 +3,99 @@
 {% block title %} Banke-T | Contacto {% endblock %}
 
 {% block headers %}
+
  <h1>Contacto</h1>
  <span class="subheading"><strong>ASESÓRATE</strong></span><br><br><br><br><br><br><br><br>
 {% endblock %}
 
 {% block content %}
-    <hr>
-<h1>Si quiere saber mas sobre nuestras promociones....</h1>
-<h2>Contactenos</h2>
-<h2>Número de Telefono </h2>      <p style="color:blue; font-size:35px"> -----     0987453352</p>
-<h3>Correos  </h3>    <p style="color:blue; font-size:35px"> -----     mepicanloscocosay@hotmail.es</p>
-<marquee>
-<table align="center" width="100"border="2">
 
-<tr>
-    <img src="{% static 'img/pollosi.gif' %}">
-   <h1>   lleve nuestras promociones</h1>
-</tr>
-</table>
-</marquee>
-<marquee behavior="alternate"  scrolldelay="1" scrollamount="4" direction="left" loop="100" onmouseout="this.start()" onmouseover="this.stop()"><a href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada" src="{% static 'img/1.png' %}" height ="200px" width="200px"/></a>&nbsp;&nbsp;<a href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada"  src="{% static 'img/2.png' %}"height ="200px" width="200px" href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada" src="{% static 'img/3.png' %}" height ="200px" width="200px"/></a>&nbsp;&nbsp;<a href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada"  src="{% static 'img/4.png' %}"height ="200px" width="200px"href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada" src="{% static 'img/5.png' %}" height ="200px" width="200px"/></a>&nbsp;&nbsp;<a href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada"  src="{% static 'img/6.png' %}"height ="200px" width="200px"href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada" src="{% static 'img/7.png' %}" height ="200px" width="200px"/></a>&nbsp;&nbsp;<a href="http://127.0.0.1:8000/gestion}" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada"  src="{% static 'img/8.png' %}"height ="200px" width="200px"href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada" src="{% static 'img/9.png' %}" height ="200px" width="200px"/></a>&nbsp;&nbsp;<a href="http://127.0.0.1:8000/gestion" target="_blank"><img title="Titulo de la entrada" alt="Titulo de la entrada"  src="{% static 'img/10.png' %}"height ="200px" width="200px" /></a></marquee>
+        <style>
+
+    body{
+
+         background-image : url("https://i.pinimg.com/originals/08/f1/8f/08f18f99279bfc06cdcab2d5ca1227e2.gif");
+    }
+
+    </style>
+    <br><br><br>
+
+    <link href="{% static 'css/loca.css' %}" rel="stylesheet">
+    <h1 style="text-align: center">¿Quieres saber más sobre nuestras promociones...?</h1><br>
+
+    <div class="card mx-auto bg-white border-danger" style="max-width: 40rem; border-width: medium">
+        <div class="card-header bg-light">
+            <span class="fa-stack -align-right">
+            <i class="fa fa-1.8x fa-stack-1.8x"></i>
+            <i class="fa fa-forward fa-stack-1.8x "></i>
+        </span><b><i>¡PONTE ONCE!</i></b>
+        </div>
+  <div class="card-body">
+    <h5 class="card-title text-danger">Asesorías y Reclamos</h5>
+      <p class="card-text "><b>Contamos con varias alternativas para que puedas contactarnos:</b></p>
+  </div>
+    </div><br><br><br>
+
+
+        <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <div class="icon">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h3>
+                        <a href="https://nimble.li/k8mp5p9x" target="_blank">WhatsApp</a>
+                    </h3>
+                    <p><b>Habla con cualquiera de nuestros colegas y despeja tus dudas, ¡antes que se acabe la comida!</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <div class="icon">
+                        <i class="fa fa-map-signs" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h5>
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">asesorbanke.t@gmail.com</a>
+                    </h5>
+                    <p><b>Para quejas y recomendaciones, contactarse a nuestro correo.</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <div class="icon">
+                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h3>
+                        <a href="https://github.com/R4dSlx/Servicio-de-Banquete" target="_blank">Servicio-de-Banquete</a>
+                    </h3>
+                    <p><b>Y si deseas darle un vistazo al codigo de la página, visita nuestro GitHub.</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <marquee scrollamount="45"><img width="1200" src="{% static "img/poio.gif" %}" alt="">
+    </marquee>
 {% endblock %}
+   <h1>Venga y lleveee...</h1>
+https://nimble.li/k8mp5p9x
 
 
 

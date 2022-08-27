@@ -7,11 +7,16 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
+import datetime
 from django.urls import reverse_lazy
 from pathlib import Path
 from django.contrib.messages import constants as messages
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django_ses.SESBackend'
+AWS_ACCESS_KEY_ID = 'AKIAQTHLQMA7WCFAQCW3'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_SES_REGION_NAME = 'us-east-1'
+AWS_SES_REGION_ENDPOINT = 'email.us-east-1.amazonaws.com'
 
 MESSAGE_TAGS = {
         messages.DEBUG: 'alert-secondary',
@@ -142,3 +147,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = "login"
 LOGIN_REDIRECT_URL = reverse_lazy('Doctor')
 LOGOUT_REDIRECT_URL = "Doctor"
+
+
